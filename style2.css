@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(3, 36, 36);
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+}
+
+i {
+    color: orange;
+}
+
+button {
+    width: 100%;
+    max-width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: orange;
+}
+
+.content {
+    float: left;
+}
+
+img {
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
+    margin-top: 150px;
+    position: absolute;
+    bottom: 180px;
+    left: 750px;
+}
+
+.color-box {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    background-color: orange;
+    border-radius: 20px;
+    height: 350px;
+    width: 500px;
+    z-index: -1;
+    transform: translatex(150px);
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .content,
+    .img {
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        width: 80%; /* Adjusted width for smaller screens */
+        max-width: 300px; /* Added max-width for smaller screens */
+        height: auto;
+        margin-top: 20px;
+        position: static; /* Changed position to static for normal flow */
+        bottom: auto;
+        left: auto;
+        margin-left: auto; /* Centered horizontally */
+        margin-right: auto; /* Centered horizontally */
+    }
+
+    .color-box {
+        display: block;
+        position: static; /* Changed position to static for normal flow */
+        margin: 20px auto; /* Centered horizontally */
+    }
+}
